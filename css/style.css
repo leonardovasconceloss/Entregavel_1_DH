@@ -11,9 +11,18 @@ body {
   box-sizing: border-box;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222222;
+}
+
+.titulo-logo {
+  display: flex;
+}
+
 .logo-nav > img {
-  position: absolute;
-  margin-top: -100px;
+  margin-top: 0px;
   width: 150px;
   height: auto;
   padding: 12px;
@@ -22,10 +31,7 @@ body {
 .barra-navegacao {
   display: flex;
   justify-content: flex-end;
-  background-color: #222222;
   height: 100px;
-  width: 100%;
-  position: absolute;
   top: 0;
 }
 
@@ -54,7 +60,6 @@ a {
 }
 
 .titulo {
-  position: absolute;
   width: 132px;
   height: 28px;
   left: 122px;
@@ -83,7 +88,7 @@ a {
 
 .container {
   display: flex;
-  margin-top: 100px;
+  margin-top: 0px;
 }
 
 .bloco-imagem {
@@ -105,7 +110,7 @@ a {
   padding: 10px;
 }
 
-.bloco-imagem h2 {
+.bloco-imagem > h2 {
   background-color: orange;
   border-radius: 5px;
   position: absolute;
@@ -116,6 +121,8 @@ a {
 }
 
 .bloco-lista {
+  display: flex;
+  justify-content: space-between;
   flex-basis: 50%;
   flex-grow: 1;
   background-color: orange;
@@ -150,12 +157,27 @@ a {
   margin-bottom: 10px;
 }
 
-.bloco-lista > img {
-  position: absolute;
+.imagem-bloco-lista > img {
   width: 300px;
-  height: 350px;
-  left: 1160px;
-  top: 267px;
+  height: 360px;
+}
+
+.imagem-bloco-lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-bottom: 100px;
+}
+
+.titulo-lista {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  font-size: 28px;
+  color: #fff;
 }
 
 /* Estilização footer*/

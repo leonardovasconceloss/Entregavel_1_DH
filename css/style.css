@@ -1,15 +1,15 @@
 /* Importando fonte */
 
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&display=swap");
 
 /* Animações Bloco lista */
 
 @keyframes Toleft {
   0% {
-    transform:translateX(100%); 
+    transform: translateX(100%);
   }
 
- 100% {
+  100% {
     transform: translateX(0%);
   }
 }
@@ -18,16 +18,13 @@
 
 @keyframes ToRight {
   0% {
-    transform:translateX(-100%); 
+    transform: translateX(-100%);
   }
 
- 100% {
+  100% {
     transform: translateX(0%);
   }
 }
-
-
-
 
 html,
 body {
@@ -219,9 +216,6 @@ a {
   width: 350px;
   height: 400px;
 }
-
-
-
 
 /* Estilização footer*/
 

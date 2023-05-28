@@ -1,10 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* Importando fonte */
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&display=swap');
+
+/* Animações Bloco lista */
+
+@keyframes Toleft {
+  0% {
+    transform:translateX(100%); 
+  }
+
+ 100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Animações Bloco imagem */
+
+@keyframes ToRight {
+  0% {
+    transform:translateX(-100%); 
+  }
+
+ 100% {
+    transform: translateX(0%);
+  }
+}
+
+
+
 
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: Roboto, sans-serif;
+  font-family: "Righteous";
 }
 
 * {
@@ -66,8 +95,8 @@ a {
   top: 36px;
   margin: auto;
   display: flex;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-family: "Lilita One";
+  font-weight: 100;
   font-size: 24px;
   line-height: 28px;
 }
@@ -89,15 +118,18 @@ a {
 .container {
   display: flex;
   margin-top: 0px;
+  background-color: #222222;
 }
 
 .bloco-imagem {
   display: flex;
+  position: relative;
   flex-basis: 50%;
   flex-grow: 1;
   justify-content: center;
   align-items: center;
   height: 100%;
+  animation: ToRight 1.5s;
 }
 
 .bloco-imagem > img {
@@ -111,13 +143,14 @@ a {
 }
 
 .bloco-imagem > h2 {
-  background-color: orange;
-  border-radius: 5px;
+  background-color: #c52823;
   position: absolute;
+  border-radius: 5px;
   top: 70%;
   left: 10%;
-  color: #fff;
+  color: #f0e1ba;
   font-size: 35px;
+  padding: 3px 15px;
 }
 
 .bloco-lista {
@@ -128,25 +161,26 @@ a {
   background-color: orange;
   border-radius: 35px;
   margin: 9px;
+  animation: Toleft 1.5s;
 }
 
-.bloco-lista > h2 {
-  color: #ffffff;
-  font-size: 24px;
-  margin-bottom: 20px;
-  padding: 50px;
-  font-size: 300%;
+.titulo-lista > h2 {
+  font-size: 30px;
+  margin: 0px;
+  position: absolute;
+  top: 110px;
 }
 
-.bloco-lista > ol {
-  color: #fff;
+.titulo-lista > ul {
+  position: absolute;
   padding: 0;
-  margin: 100px;
-  margin-left: 180px;
   display: flex;
   flex-direction: column;
-  margin-top: -55px;
-  font-size: 180%;
+  gap: 10px;
+  font-size: 20px;
+  width: 100%;
+  margin-left: 300px;
+  margin-top: 20px;
 }
 .bloco-lista > li {
   padding: 20px;
@@ -177,8 +211,17 @@ a {
   width: 100%;
   align-items: center;
   font-size: 28px;
-  color: #fff;
+  color: #222222;
+  position: relative;
 }
+
+.titulo-lista > img {
+  width: 350px;
+  height: 400px;
+}
+
+
+
 
 /* Estilização footer*/
 
@@ -220,10 +263,15 @@ footer {
   padding: 12px;
 }
 
+.titulo2-imagem2 {
+  display: flex;
+  align-items: center;
+}
+
 .titulo2 {
   display: flex;
   justify-content: flex-end;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lilita One", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;

@@ -114,6 +114,7 @@ a {
 
 .container {
   display: flex;
+  flex-direction: column;
   margin-top: 0px;
   background-color: #222222;
 }
@@ -221,7 +222,7 @@ a {
 
 footer {
   background-color: #222222;
-  padding: 10px 1px;
+  padding: 50px 1px;
 }
 
 .footer-container {
@@ -282,4 +283,10 @@ footer {
 
 .front2 {
   color: red;
+}
+
+/* Div que abriga os dois blocos*/
+
+.juncao-dos-blocos {
+  display: flex;
 }

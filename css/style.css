@@ -26,15 +26,11 @@
   }
 }
 
-html,
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Righteous";
-}
-
-* {
-  box-sizing: border-box;
 }
 
 header {
@@ -56,7 +52,8 @@ header {
 
 .barra-navegacao {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-items: center;
   height: 100px;
   top: 0;
 }
@@ -69,31 +66,18 @@ a {
 .barra-navegacao > ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
-  margin-left: auto;
-  margin-right: 30px;
-  margin-top: 40px;
-  margin-bottom: 30px;
   display: flex;
+  align-items: center;
 }
 
 .barra-navegacao > ul > li {
   margin-right: 20px;
 }
 
-.barra-navegacao > ul > li:last-child {
-  margin-right: 0;
-}
-
 .titulo {
-  width: 132px;
-  height: 28px;
-  left: 122px;
-  top: 36px;
   margin: auto;
-  display: flex;
   font-family: "Lilita One";
-  font-weight: 100;
+  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
 }
@@ -114,17 +98,21 @@ a {
 
 .container {
   display: flex;
-  flex-direction: column;
-  margin-top: 0px;
+  align-items: center;
+  justify-content: center;
   background-color: #222222;
+}
+
+.juncao-dos-blocos {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem;
 }
 
 .bloco-imagem {
   display: flex;
-  position: relative;
   flex-basis: 50%;
   flex-grow: 1;
-  justify-content: center;
   align-items: center;
   height: 100%;
   animation: ToRight 1.5s;
@@ -137,7 +125,6 @@ a {
   max-width: 100%;
   height: auto;
   border-radius: 35px;
-  padding: 10px;
 }
 
 .bloco-imagem > h2 {
@@ -153,20 +140,16 @@ a {
 
 .bloco-lista {
   display: flex;
-  justify-content: space-between;
-  flex-basis: 50%;
-  flex-grow: 1;
+  align-items: center;
+  width: 50%;
+  height: auto;
   background-color: orange;
   border-radius: 35px;
-  margin: 9px;
   animation: Toleft 1.5s;
 }
 
 .titulo-lista > h2 {
-  font-size: 30px;
-  margin: 0px;
-  position: absolute;
-  top: 110px;
+  font-size: 2.1rem;
 }
 
 .titulo-lista > ul {
@@ -174,11 +157,9 @@ a {
   padding: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
   font-size: 20px;
-  width: 100%;
-  margin-left: 300px;
-  margin-top: 20px;
 }
 .bloco-lista > li {
   padding: 20px;
@@ -190,8 +171,10 @@ a {
 }
 
 .imagem-bloco-lista > img {
-  width: 300px;
-  height: 360px;
+ 
+  width: 100%;
+  padding-top: 5rem;
+  padding-right: 5rem;
 }
 
 .imagem-bloco-lista {
@@ -229,21 +212,13 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: auto;
-  margin: 0 auto;
-  margin-left: 20px;
+  width: 100%;
+  padding: 2rem;
 }
 
 .footer-menu {
+  display: flex;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  line-height: 2;
-}
-
-.footer-menu li {
-  display: inline-block;
-  margin-right: 10px;
 }
 
 .footer-menu li a {
@@ -253,9 +228,8 @@ footer {
 }
 
 .footer-logo img {
-  width: 150px;
-  height: auto;
-  padding: 12px;
+  width: 8rem;
+  padding: 0.8rem;
 }
 
 .titulo2-imagem2 {
@@ -264,13 +238,8 @@ footer {
 }
 
 .titulo2 {
-  display: flex;
-  justify-content: flex-end;
   font-family: "Lilita One", sans-serif;
-  font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
-  margin-left: 1100px;
 }
 
 .pizza2 {
@@ -286,7 +255,3 @@ footer {
 }
 
 /* Div que abriga os dois blocos*/
-
-.juncao-dos-blocos {
-  display: flex;
-}
